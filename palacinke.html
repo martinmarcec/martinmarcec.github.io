@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #2c3531;
+}
+
+/* Style the header */
+header {
+    background-color: #2c3531;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+	
+}
+
+article {
+    /*float: left;*/
+    padding: 20px;
+    width: 97.6%;
+    background-color: #d9b08c;
+    height: relative; /* only for demonstration, should be removed */
+    position: center;
+    margin: 0px auto;
+    
+}
+
+footer {
+	
+    background-color: #2c3531;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+p {
+	font-size: 17px;
+	color: 333333;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+
+h2 {
+	text-align: left;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #116466;
+  font-size: 17px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #d1e8e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0b4064;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #116466;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #d1e8e2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #0b4064}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+	
+	<header>
+    <h2>Martin Marčec - Skriptni jezici i web programiranje</h2>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Objave</a>
+        <div class="dropdown-content">
+          <a href="putovanja.html">Putovanje u svemir</a>
+		  <a href="zaragoza.html">Zaragoza</a>
+		  <a href="palacinke.html">Recepti</a>
+          <a href="procesweb.html">Proces izrade web stranice</a>
+          <a href="boje.html">Kodovi boja</a>
+          <a href="skriptnijezici.html">Skriptni jezici</a>
+          <a href="trazilice.html">Tražilice</a>
+        </div>
+      </li>
+    </ul>
+    
+		
+		
+	</header>
+
+	<section>
+	  
+	  
+	  	<article>
+			<table>
+				<tr>
+				<th colspan="4"><h1>Palačinke</h1></th>
+				</tr>
+			
+				<tr>
+				<td> <img src="palacinka1.jpg" alt="Palačinka 1" width="320" heigth="160"></td>
+				<td> <img src="palacinka2.jpg" alt="Palačinka 2" width="320" height="160"></td>
+				<td> <img src="palacinka3.jpg" alt="Palačinka 3" width="320" height="160"></td>
+				</tr>
+				
+				<tr>
+				<td>2 jaja<br>150 g brašna<br>300 ml mlijeka<br>malo soli</td>
+				<td>2 jaja<br>prstohvat soli<br>150 g brašna<br>žličica praška za pecivo<br>300 ml mlijeka<br>vrh noža cimeta<br>Preljev:<br>100 g meda<br>1/2 naranče<br>1/2 limuna<br>korice limuna, naranče, cimet</td>
+				<td>2 jaja<br>žlica smeđeg šećera<br>vrećica vanilin šećera<br>2 dcl mlijeka<br>1,5 dcl vode<br>60 g maslaca<br>prstohvat soli<br>200 g brašna<br>1/2 vrećice praška za pecivo<br>korica limuna i naranče</td>
+				</tr>
+				
+				
+				<tr>
+				<td><b>1.</b> U zdjelu stavite brašno, jaja, sol i mlijeko te pjenjačom dobro izmiješajte kako biste dobili glatku smjesu.<br>
+					<b>2.</b> Na zagrijanoj tavi za palačinke s malo masnoće ulijevajte zaimačom lijevano tijesto te ga brzim okretanjem tave rasporedite po cijeloj njezinoj površini.<br>
+					<b>3.</b> Kada palačinka na površini promijeni boju, okrenite je pomoću palete i kratko pecite na drugoj strani.</td>
+				
+				<td><b>1.</b> Od navedenih sastojaka umutite smjesu za palačinke i ostavite da odstoji 30-ak min.<br>
+					<b>2.</b> Nakon što je smjesa odstajala, ispecite palačinke.<br>
+					<b>Preljev:</b> Med stavite u manji lončić, dodajte sok od polovice naranče i limuna, malo zagrijte, začinite koricom limuna, naranče i cimetom. Možete dodati i neke druge začine po želji</td>
+				
+				<td><b>1.</b> Istucite pjenjačom žumanca s obje vrste šećera , postepeno uz miješanje dodajte mlijeko i vodu, dodajte otopljeni maslac i malo korice limuna i naranče.<br>
+					<b>2.</b> Istucite bjelanca sa soli u čvrst snijeg.<br>
+					<b>3.</b> Na smjesu prosijte brašno i prašak za pecivo, sve dobro umiješajte pjenjačom, te lagano umiješajte snijeg od bjelanjaka. Smjesa mora biti gusta, gušća nego za obične palačinke.<br>
+					<b>4.</b> Premažite tavu s malo ulja. Većom žlicom uzimajte od smjese, te na tavi oblikujte manje palačinke promjera 9-10 cm. Možete odjednom peći 2 - 3 palačinke, ovisno kolika vam je tava.<br>
+					</td>
+					
+			
+					
+				</tr>
+			
+			
+			</table>
+			
+			
+		</article>
+	  
+	</section>
+
+	<footer>
+	  <p>Martin Marcec</p>
+	</footer>
+
+
+	
+	
+</body>
+</html>

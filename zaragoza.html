@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #2c3531;
+}
+
+/* Style the header */
+header {
+    background-color: #2c3531;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+	
+}
+
+article {
+    /*float: left;*/
+    padding: 20px;
+    width: 97.6%;
+    background-color: #d9b08c;
+    height: relative; /* only for demonstration, should be removed */
+    position: center;
+    margin: 0px auto;
+    
+}
+
+footer {
+	
+    background-color: #2c3531;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+p {
+	font-size: 17px;
+	color: 333333;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+
+
+h2 {
+	text-align: left;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #116466;
+  font-size: 17px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #d1e8e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0b4064;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #116466;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #d1e8e2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #0b4064}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+	
+	<header>
+    <h2>Martin Marčec - Skriptni jezici i web programiranje</h2>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Objave</a>
+        <div class="dropdown-content">
+          <a href="putovanja.html">Putovanje u svemir</a>
+          <a href="zaragoza.html">Zaragoza</a>
+          <a href="palacinke.html">Recepti</a>
+          <a href="procesweb.html">Proces izrade web stranice</a>
+          <a href="boje.html">Kodovi boja</a>
+          <a href="skriptnijezici.html">Skriptni jezici</a>
+          <a href="trazilice.html">Tražilice</a>
+        </div>
+      </li>
+    </ul>
+    
+		
+		
+	</header>
+
+	<section>
+	  
+	  
+	 	 <article>
+			<h1>Zaragoza</h1>
+			<image src="zaragoza1.jpg" alt="Zaragoza">
+			<p>Zaragoza je glavni grad Španjolske pokrajine <a href="https://en.wikipedia.org/wiki/Aragon">Aragon</a> u <a href="https://en.wikipedia.org/wiki/Spain">Španjolskoj</a>. Leži uz rijeku <a href="https://en.wikipedia.org/wiki/Ebro">Ebru</a> i njezine pritoke. Stanovništvo Zaragoze 2010 bilo je 701.090 na površini od 1062 cetvornih kilometara.
+			Grad se nalazi na nadmorskoj visini od 199 metara iznad razine mora.<br><br> Grad je poznat po folklornoj, lokalnoj gastronomiji i znamenitostima kao što su <a href="https://en.wikipedia.org/wiki/Cathedral-Basilica_of_Our_Lady_of_the_Pillar">Basilika del Pilar</a> , katedrala <a href="https://en.wikipedia.org/wiki/Cathedral_of_the_Savior_of_Zaragoza">La Seo</a> i palača <a href="https://en.wikipedia.org/wiki/Aljafer%C3%ADa">Aljafera</a>. Zajedno s La Seom i Aljaferijom, nekoliko drugih građevina čine dio arhitekture Aragona koji je na <b>UNESCO</b>-vom popisu svjetske kulturne baštine. <a href="https://en.wikipedia.org/wiki/Fiestas_del_Pilar"><i>Fiesti del Pilar</i></a> je jedan od najpoznatijih festivala u Španjolskoj.</p>
+			
+			<h2>Etimologija</h2>
+			<p>Grad je nazvan prema Rimljanima Caesaraugusta iz kojih proizlazi sadašnje ime. Iberijski grad koji je prethodio rimski grad zvao Salduie.</p>
+			
+			<h2>Demografski podaci</h2>
+			<p>Stanovništvo u tisucama kroz godine</p>
+			<image src="klima.jpg" alt="Stanovništvo Zaragoze kroz godine">
+			
+			<h2>Klima</h2>
+			<p>Zaragoza ima blagu polu-sušnu klimu, jer se nalazi u širokom bazenu potpuno okruženom planinama koje blokiraju vlažni zrak iz Atlantskog i Mediteranskog. 
+			Prosječna godišnja kolicina oborina je slaba od 322 milimetara s obilnim sunčanim danima, a najslabija sezone su proljeće i jesen, s relativnom sušom ljeti i zima.</p>
+			<table style="width:100%">
+				<tr>
+					<th>Mjesec</th>
+					<th>Sijecanj</th>
+					<th>Veljaca</th>
+					<th>Ožujak</th>
+					<th>Travanj</th>    
+					<th>Svibanj</th>
+					<th>Lipanj</th>
+					<th>Srpanj</th>
+					<th>Kolovoz</th>
+					<th>Rujan</th>
+					<th>Listopad</th>
+					<th>Studeni</th>
+					<th>Prosinac</th>
+					<th>Godišnji projek</th>
+				</tr>
+				<tr>
+					<td>Prosjek mjeseca</th>
+					<td>6.6°C</td>
+					<td>8.2°C</td>
+					<td>11.6°C</td>
+					<td>13.8°C</td>
+					<td>18.0°C</td>
+					<td>22.6°C</td>
+					<td>25.3°C</td>
+					<td>25.0°C</td>
+					<td>21.2°C</td>
+					<td>16.2°C</td>
+					<td>10.6°C</td>
+					<td>7.0°C</td>
+					<td>15.5°C</td>         
+				</tr>
+			</table>
+				
+			<h2>Znamenitosti</h2>
+			<table style="width:100%">
+				<tr>
+					<td>
+						<img src="bazilika.jpg" alt="Bazilika Nuestra Senora del Pilar" width="364" height="273"><a href="https://en.wikipedia.org/wiki/Cathedral-Basilica_of_Our_Lady_of_the_Pillar"><br>Bazilika Nuestra Senora del Pilar<br></a></img>
+					</td>
+					<td>
+						<img src="rimzidine.jpg" alt="Rimske zidine" width="364" height="273"><a href="https://en.wikipedia.org/wiki/Cathedral_of_the_Savior_of_Zaragoza"><br>Rimske Zidine<br></a></img>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="most.jpg" alt="Puente de Piedra most" width="364" height="273"><a href="https://en.wikipedia.org/wiki/Puente_de_Piedra_(Zaragoza)"><br>Puente de Piedra most<br></a></img>
+					</td>
+					<td>
+						<img src="crkva.jpg" alt="Crkva Santa Engracia de Zaragoza" width="364" height="273"><a href="https://en.wikipedia.org/wiki/Church_of_Santa_Engracia_de_Zaragoza"><br>Crkva Santa Engracia de Zaragoza<br></a></img>
+					</td>
+				</tr>
+			</table>
+			
+			<h2>Sport</h2>
+				<h3>Nogomet</h3>
+				<p>Zaragozina glavna nogometna momčad je <a href="https://en.wikipedia.org/wiki/Real_Zaragoza">Real Zaragoza</a>. Natječe se u Segunda Division. Klub je osnovan 18. ožujka 1932., igra na stadionu La Romareda. Klub je proveo većinu svoje povijesti u La Ligi. Jedan od najznacajnijih događaja u nedavnoj povijesti momčadi je pobjeda bivšeg Kup UEFA 1995.</p>
+				<img src="real.png" alt="Logo Real Zaragoza">
+				<h3>Košarka</h3>
+				<p>Glavna košarkaška momcad, <a href="https://en.wikipedia.org/wiki/Basket_Zaragoza">Basket Zaragoza</a> , igra u Liga ACB. Igraju svoje domaće igre u Pabellon Principe Felipe s kapacitetom od 10.744</p>
+				<img src="kosarka.png" alt="Logo Basket Barcelona">
+			
+			
+			<h2>Poznate osobe</h2>
+			<p><a href="https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pozas_Perea">Sebastian Pozas</a>(1876-1946), vojni casnik<p>
+			<p><a href="https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pozas_Perea">Abraham Abulafia</a> 1240-1291), osnivac škole "Prophetic Kabbalah"<p>
+			
+			
+			<h2>Izvori</h2>
+			<a href="https://en.wikipedia.org/wiki/Zaragoza">https://en.wikipedia.org/wiki/Zaragoza<br></a>
+			<a href="https://hr.wikipedia.org/wiki/Zaragoza">https://hr.wikipedia.org/wiki/Zaragoza<br></a>
+
+		</article>
+	  
+	</section>
+
+	<footer>
+	  <p>Martin Marcec</p>
+	</footer>
+
+
+	
+	
+</body>
+</html>

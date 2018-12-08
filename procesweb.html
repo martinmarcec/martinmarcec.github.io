@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #2c3531;
+}
+
+/* Style the header */
+header {
+    background-color: #2c3531;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+	
+}
+
+article {
+    /*float: left;*/
+    padding: 20px;
+    width: 97.6%;
+    background-color: #d9b08c;
+    height: relative; /* only for demonstration, should be removed */
+    position: center;
+    margin: 0px auto;
+    
+}
+
+footer {
+	
+    background-color: #2c3531;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+p {
+	font-size: 17px;
+	color: 333333;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+
+
+h2 {
+	text-align: left;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #116466;
+  font-size: 17px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #d1e8e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0b4064;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #116466;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #d1e8e2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #0b4064}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+	
+	<header>
+    <h2>Martin Marčec - Skriptni jezici i web programiranje</h2>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Objave</a>
+        <div class="dropdown-content">
+          <a href="putovanja.html">Putovanje u svemir</a>
+          <a href="zaragoza.html">Zaragoza</a>
+          <a href="palacinke.html">Recepti</a>
+          <a href="procesweb.html">Proces izrade web stranice</a>
+          <a href="boje.html">Kodovi boja</a>
+          <a href="skriptnijezici.html">Skriptni jezici</a>
+          <a href="trazilice.html">Tražilice</a>
+        </div>
+      </li>
+    </ul>
+    
+		
+		
+	</header>
+
+	<section>
+	  
+	  
+	    <article>
+            <h1>Proces izrade web stranice</h1>
+            <h2>Da bi se nešto smatralo webstranicom, set stranica mora imati:</h2>
+            <p>• Tematski kriterij: mora biti tematski povezana (reflected in the same visual site name)</p>
+            <p>• Navigacijski kriterij: mora imati uobičajen integriran navigacijski sustav</p>
+            <p>• Vizualan kriterij: mora imati isti izgled i osjećaj</p>
+            <br>
+
+            <h2>6 faza dizajna webstranice:</h2>
+            <p>• Skupljanje informacija</p>
+            <p>• Planiranje</p>
+            <p>• Dizajn</p>
+            <p>• Kodiranje i razvoj</p>
+            <p>• Testiranje</p>
+            <p>• Održavanje</p>
+
+            <br>
+            <h2>Prvi korak - Skupljanje informacija</h2>
+            <p>Prvi korak u osmišljavanju uspješne internetske stranice jest prikupljanje informacija. Mnoge stvari treba uzeti u obzir prilikom izrade izgleda i dojma vaše webstranice. Ovaj prvi korak zapravo je najvažniji jer uključuje razumijevanje tvrtke za koju je stvoren. Važno je da web dizajner započne postavljanjem mnogih pitanja koja će im pomoći da razumiju tvrtku i potrebe na web stranici.</p>
+            <p>Određene stvari koje treba razmotriti su:</p>
+            <strong>Svrha</strong>
+            <p>Koja je svrha web lokacije? Želite li pružiti informacije, promicati uslugu, prodati proizvod ...?</p>
+            <strong>Ciljevi</strong>
+            <p>Što se postiže izgradnjom web stranice? Dva od više zajedničkih ciljeva su ili zaraditi novac ili dijeliti informacije.</p>
+            <strong>Ciljana publika</strong>
+            <p>Postoji li određena skupina ljudi koja će pomoći da postignete ciljeve? Korisno je zamisliti "idealnu" osobu koju želite posjetiti na svojoj web stranici. Razmotriti njihovu dob, spol ili interese - to će kasnije pomoći u određivanju najboljeg stila dizajna za web-lokaciju.</p>
+            <strong>Sadržaj</strong>
+            <p>Kakve će informacije ciljana publika tražiti na vašoj web-lokaciji? Tražite li određene informacije, određeni proizvod ili uslugu, online naručivanje ...?</p>
+            <img src="http://from.hr/martinmarcec/files/2018/10/data.jpg" alt="" width="259" height="194">
+            
+            <br>
+            <strong>Drugi korak - Planiranje</strong>
+            <p>Koristeći informacije sakupljene iz prve faze, vrijeme je za sastavljanje plana za web stranicu. Ovo je točka u kojoj se razvija web-lokacija. Karta web lokacije sadrži popis svih glavnih tema web-lokacije, kao i podteme, ako je primjenjivo.<br> Ovo služi kao vodič o tome koji će sadržaj biti na web stranici i bitan je za razvoj dosljednog, lako razumljivog navigacijskog sustava. Krajnji korisnik web stranice - baš kao klijent - mora imati na umu prilikom oblikovanja web stranice. To su, uostalom, ljudi koji će naučiti o usluzi ili kupnji proizvoda.<br> Dobro korisničko sučelje omogućuje jednostavno kretanje web stranicama, i to je temelj za to. Tijekom faze planiranja, web dizajner također će odlučiti koje bi tehnologije trebale biti provedene.</p>
+            <img src="http://from.hr/martinmarcec/files/2018/10/planning-300x200.jpg" alt="" width="300" height="200">
+            
+            <br>
+            <strong>Treći korak - Dizajn</strong>
+            <p>a temelju podataka prikupljenih do ove točke, vrijeme je da se odredi izgled i dojam web-lokacije. Ciljana publika jedan je od ključnih čimbenika koji se uzimaju u obzir. Na primjer, stranica namijenjena tinejdžerima izgledat će mnogo drugačija od one namijenjene financijskoj instituciji. Kao dio faze projektiranja, također je važno ugraditi elemente poput logotipa ili boja tvrtke kako biste osnažili identitet vaše tvrtke na web stranici. Web dizajner će stvoriti jedan ili više dizajna prototipa za web stranice. Ovo je obično jpg slika o izgledu konačnog dizajna. Često ćete poslati poruku e-pošte s mock-upovima za vašu web stranicu, a drugi dizajneri to poduzimaju korak dalje dajući vam pristup sigurnom području svoje web stranice namijenjeno korisnicima da vide rad koji je u tijeku. U oba slučaja, dizajner trebao bi omogućiti da vidite svoj projekt kroz fazu dizajna i razvoja. Najvažniji razlog za to je da vam daje priliku da izrazite da li vam se sviđa ili ne sviđa web dizajn. U ovoj fazi, komunikacija između vas i vašeg dizajnera je presudna kako bi se osiguralo da će konačna web stranica odgovarati vašim potrebama i ukusu. Važno je da usko surađujete s vašim dizajnerom, razmjenjujući ideje, sve dok ne dođete do konačnog dizajna za svoje web stranice. Tada razvoj može početi ...</p>
+            <img src="http://from.hr/martinmarcec/files/2018/10/design-300x127.png" alt="" width="300" height="127">
+            
+            <br>
+            <p>Poveznice</p>
+            <a href="http://ec.europa.eu/ipg/plan/creation_site/definition/index_en.htm">http://ec.europa.eu/ipg/plan/creation_site/definition/index_en.htm<br></a>
+            <a href="https://www.idesignstudios.com/web-design/phases-web-design-development-process/">https://www.idesignstudios.com/web-design/phases-web-design-development-process/<br></a>
+            <a href="https://xbsoftware.com/blog/website-development-process-full-guide/">https://xbsoftware.com/blog/website-development-process-full-guide/<br></a>
+            
+
+        </article>
+	  
+	</section>
+
+	<footer>
+	  <p>Martin Marcec</p>
+	</footer>
+
+
+	
+	
+</body>
+</html>
