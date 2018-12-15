@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #2c3531;
+}
+/* Style the header */
+header {
+    background-color: #2c3531;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+	
+}
+article {
+    /*float: left;*/
+    padding: 20px;
+    width: 97.6%;
+    background-color: #d9b08c;
+    height: relative; /* only for demonstration, should be removed */
+    position: center;
+    margin: 0px auto;
+    
+}
+footer {
+	
+    background-color: #2c3531;
+    padding: 10px;
+	padding-left: 37px;
+    text-align: left;
+    color: #d1e8e2;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+p {
+	font-size: 17px;
+	color: 333333;
+}
+h2 {
+	text-align: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #116466;
+  font-size: 17px;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: #d1e8e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0b4064;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #116466;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #d1e8e2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #0b4064}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.pagination a {
+  color: #d1e8e2;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  background-color: #116466;
+
+}
+
+.pagination a.active {
+  background-color: #0b4064;
+  color: #d1e8e2;
+}
+
+.pagination a:hover:not(.active) {background-color: #0b4064;}
+
+
+#tekst{
+    font-size: 20px;    
+}
+
+#nesto{
+	color: #2c3531;
+}
+
+h1{
+	font-size: 30px;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+	
+	<header>
+    <h2>Martin Marčec - Skriptni jezici i web programiranje</h2>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Objave</a>
+        <div class="dropdown-content">
+		<a href="prvagit.html">Timeline</a>
+	  	<a href="putovanja.html">Putovanje u svemir</a>
+          	<a href="zaragoza.html">Zaragoza</a>
+          	<a href="palacinke.html">Recepti</a>
+          	<a href="procesweb.html">Proces izrade web stranice</a>
+          	<a href="boje.html">Kodovi boja</a>
+          	<a href="skriptnijezici.html">Skriptni jezici</a>
+          	<a href="trazilice.html">Tražilice</a>
+        </div>
+      </li>
+    </ul>
+    
+		
+		
+	</header>
+
+	<section>
+	  
+	  
+	  <article>
+			<h2></h2>
+        
+			<h1>12. Godina</h1>
+			<img src="godina12.jpg" alt="" width="653" height="390">
+			<p id="tekst">Plivanje u moru (2013.)</p>
+			<br><br>
+			<img src="godina12.2.jpg" alt="" width="653" height="390">
+			<p id="tekst">Plovidba čamcem na Dunavu (2013.)</p>
+			
+	
+	  </article>
+	  
+	</section>
+
+	<footer>
+			<p>Izaberi godinu</p>
+			<div class="pagination">
+				<a href="prvagit.html">1</a>
+				<a href="druga.html">2</a>
+				<a href="treca.html">3</a>
+				<a href="cetvrta.html">4</a>
+				<a href="peta.html">5</a>
+				<a href="sesta.html">6</a>
+				<a href="sedma.html">7</a>
+				<a href="osma.html">8</a>
+				<a href="deveta.html">9</a>
+				<a href="deseta.html">10</a>
+				<a href="jedanaesta.html">11</a>
+				<a class="active" href="dvanaesta.html">12</a>
+				<a href="trinaesta.html">13</a>
+				<a href="cetrnaesta.html">14</a>
+				<a href="petnaesta.html">15</a>
+				<a href="sesnaesta.html">16</a>
+				<a href="sedamnaesta.html">17</a>
+			</div>
+			<p id="nesto">nesto</p>
+		
+	</footer>
+
+
+	
+	
+</body>
+</html>
