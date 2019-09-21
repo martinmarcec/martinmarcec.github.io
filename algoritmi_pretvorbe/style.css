@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#broj {
+    font-size: 30px;
+    width: 20%;
+
+    padding: 5px;
+}
+
+#baza {
+    font-size: 30px;
+    width: 5%;
+    padding: 5px;
+}
+
+#baza2 {
+    font-size: 30px;
+    width: 5%;
+    padding: 5px;
+    position: relative;
+    top: 58px;
+    height: 31px;
+}
+
+button {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#rjesenje, #rjesenje2 {
+    border: 1px solid #999;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 20%;
+    padding: 5px;
+    color: #777777;
+}
+
