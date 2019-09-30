@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="940" height="470"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "#db0d2a";
+ctx.fillRect(0,235,940,235)
+ctx.fillStyle = "#ffffff";
+ctx.fillRect(0,0,940,30);
+ctx.fillStyle = "#ffffff";
+ctx.fillRect(0,440,940,470);
+ctx.fillStyle = "#595959";
+ctx.fillRect(0,445,940,470);
+
+
+
+ctx.beginPath();
+ctx.arc(470,235,110,-15.7,2*Math.PI);
+ctx.lineWidth = 45;
+ctx.strokeStyle = "#ffffff";
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(470,235,20,-15.7,2*Math.PI);
+ctx.lineWidth = 45;
+ctx.strokeStyle = "#ffffff";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(470,235,10,-15.7,2*Math.PI);
+ctx.lineWidth = 20;
+ctx.strokeStyle = "#ffffff";
+ctx.stroke();
+ctx.fillStyle = "#ffdbe0";
+ctx.fillRect(0,0,940,235);
+ctx.fillStyle = "#ffffff";
+ctx.fillRect(0,0,940,30);
+
+ctx.beginPath();
+ctx.arc(470,235,50,15.7,2*Math.PI);
+ctx.lineWidth = 15;
+ctx.strokeStyle = "#250857";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(470,235,65,15.7,2*Math.PI);
+ctx.lineWidth = 15
+ctx.strokeStyle = "#a4d7eb";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(470,235,80,15.7,2*Math.PI);
+ctx.lineWidth = 15;
+ctx.strokeStyle = "#4aad15";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(470,235,95,15.7,2*Math.PI);
+ctx.lineWidth = 15;
+ctx.strokeStyle = "#f7d340";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(470,235,110,15.7,2*Math.PI);
+ctx.lineWidth = 15;
+ctx.strokeStyle = "#e89b3c";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(470,235,125,15.7,2*Math.PI);
+ctx.lineWidth = 15;
+ctx.strokeStyle = "#ff0000";
+ctx.stroke();
+
+ctx.font = "26px Arial";
+ctx.fillText("940 x 470", 10, 467);
+
+
+</script>
+
+</body>
+</html>
