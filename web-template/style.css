@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    flex: 2;
+    height: 100vh;
+    order: 1;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+#con {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+    order: 2;
+}
+
+#con > header {
+    flex: 1;
+    order: 1;
+    margin: 0 15px;
+}
+header > h1{
+    font-weight: 400;
+}
+
+#con > article {
+    flex: 12;
+    order: 2;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#con > #footer1 {
+    order: 2;
+    background-color: #aaa;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#con > #footer2 {
+    order: 3;
+    background-color: #666;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#con > footer {
+    order: 4;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+nav > img {
+    width: 120px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+nav > h3{
+    margin: 20px;
+    font-weight: 400;
+}
+nav > p{
+    margin: 20px;
+    font-weight: 400;
+    color: #666;
+}
+.items > a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+}
+.items > a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #ccc;
+}
+.items > a:active {
+    color: black;
+    text-decoration: none;
+}
+.items > a:visited {
+    color: black;
+    text-decoration: none;
+}
+.icons {
+    margin: 20px;
+}
+.icons > i:hover {
+    color: #ccc;
+} 
+
+#filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.headItems > a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    float: left;
+    padding: 10px 20px;
+    margin-left: 5px;
+}
+.headItems > a:hover,.headItems > a:nth-child(1):hover {
+    color: black;
+    text-decoration: none;
+    background-color: #ccc;
+}
+.headItems > a:active {
+    color: black;
+    text-decoration: none;
+}
+.headItems > a:visited {
+    color: black;
+    text-decoration: none;
+}
+.headItems > a:nth-child(1){
+    background-color: black; 
+    color: white;
+}
+
+.imgCon {
+    flex: 0 0 32.3%;
+    justify-content: space-around;
+    margin: 0 5px 10px 5px;
+    background-color: white;
+}
+.imgCon > img {
+    width: 100%;
+}
+.imgCon > img:hover {
+    opacity: 0.5;
+}
+.imgCon > h4, .imgCon > p {
+    font-size: 15px;
+    padding: 0 10px;
+    color: #333;
+}
+
+#numbers {
+    margin: auto;
+}
+
+#numbers > div {
+    display: block;
+    float: left;
+    padding: 15px;
+    width: 10px;
+    padding: 10px 25px 10px 15px;
+    color: black;
+    text-align: justify;
+}
+#numbers > div:hover {
+    background-color: black;
+    color: white;
+}
+
+#about {
+    width: 100%;
+}
+#about > img {
+    width: 48%;
+    margin-left: 1%;
+}
+
+article  > h3, article > p {
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    color: #333;
+    width: 100%;
+}
+article  > h3 {
+    font-size: 20px;
+    color: black;
+}
+
+#ph1, #wd1, #ps1{
+    height: 40px;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#ph2, #wd2, #ps2 {
+    width: 5%;
+    height: 40px;
+    background-color: #aaa;
+}
+#ph1 {
+    width: 95%;
+}
+#ph2 {
+    width: 5%;
+}
+#wd1 {
+    width: 85%;
+}
+#wd2 {
+    width: 15%;
+}
+#ps1 {
+    width: 80%;
+}
+#ps2 {
+    width: 20%;
+}
+
+#resume {
+    border: none;
+    height: 40px;
+    width: 20%;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 10px;
+}
+#resume:hover {
+    background-color: #aaa;
+    color: black;
+}
+#basic {
+    border-collapse: collapse;
+    opacity: 0.7;
+    flex: 0 0 32.3%;
+    justify-content: space-around;
+}
+#basic:hover {
+    opacity: 1;
+}
+#basic tr td {
+    border: 1px solid #bbb;
+    background-color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+#basic th {
+    border: 1px solid #bbb;
+    background-color: black;
+    color: white;
+    padding: 25px 50px;
+    font-size: 25px;
+    font-weight: 300;
+}
+td > button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(0, 150, 136);
+    color: white;
+    font-size: 15px;
+}
+td > button:hover {
+    background-color: black;
+}
+
+#footer1 > div:nth-child(even) {
+    background-color: #666;
+    flex: 0 0 32.3%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px 20px;
+    margin-bottom: 50px;
+}
+#footer1 > div:nth-child(odd) {
+    background-color: rgb(0, 150, 136);
+    flex: 0 0 32.3%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px 20px;
+    margin-bottom: 50px;
+}
+
+label, input {
+    width: 100%;
+}
+input {
+    height: 40px;
+    margin-bottom: 20px;
+}
+#send {
+    border: none;
+    height: 40px;
+    width: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+#send:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#footer2 > div {
+    flex: 0 0 32.3%;
+    color: white;
+}
+#footer2 > div > h3 {
+    font-weight: 300;
+}
+asdf {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0;
+}
+qwer {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0;
+}
+asdf:hover {
+    background-color: #ccc;
+}
+qwer:hover {
+    background-color: #ccc;
+}
+as {
+    display: flex;
+    flex-direction: column;
+}
+as > h4, as > p{
+    padding: 0 5px 5px 10px;
+    margin: 0;
+}
+
+span {
+    color: #333;
+    background-color: #999;
+    font-size: 14px;
+    padding: 3px;
+    margin: 0 0 25px 5px;
+    float: left;
+}
+
