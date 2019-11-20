@@ -1,0 +1,22 @@
+body {
+    margin: 2px;
+}
+
+th,td {
+    text-align: center;
+    padding: 1px;
+}
+
+.container {
+    margin: 15px;
+}
+
+#lijevo {
+    position: relative;
+    top: 80px;
+}
+#desno {
+    position: relative;
+    top: 80px;
+    left: 160px;
+}
