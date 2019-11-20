@@ -8,46 +8,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stil.css">
-    <title>Document</title>
+    <title>Sustav za vođenje inventure</title>
 </head>
 <body>
-    <header>
-      <button id="lijevo">&#10094;</button><!--gumb lijevo-->
-      <table id="tablica">
-        <tr>
-          <td>ID:</td>
-          <td class="data">1</td>
-        </tr>
-        <tr>
-          <td>Inv. broj:</td>
-          <td class="data">1234A</td>
-        </tr> 
-        <tr>
-          <td>Naziv:</td>
-          <td class="data">stolac</td>
+    <article>
+      <div id="prvo">
+        <button id="lijevo">&#10094;</button><!--gumb lijevo-->
+        <table class="table-bordered" id="jedan">
+          <tr>
+            <td>ID:</td>
+            <td class="data">1</td>
           </tr>
-        <tr>
-          <td>Mjesto:</td>
-          <td class="data">uc31</td>
-        </tr>
-        <tr>
-          <td>Ser. broj:</td>
-          <td class="data">12345678</td>
-        </tr>    
-        <tr>
-          <td>A. stopa:</td>
-          <td class="data">25%</td>
-        </tr>                             
-      </table>
-      <button id="desno">&#10095;</button><!--gumb desno-->
-    </header>
-    <footer>
-      <div id="editGumbi">
-        <button>Unos u inventar</button><br>
-        <button>Promjena označenog</button><br>
-        <button>Obriši označeno</button><br>
+          <tr>
+            <td>Inv. broj:</td>
+            <td class="data">1234A</td>
+          </tr> 
+          <tr>
+            <td>Naziv:</td>
+            <td class="data">stolac</td>
+          </tr>
+          <tr>
+            <td>Mjesto:</td>
+            <td class="data">uc31</td>
+          </tr>
+          <tr>
+            <td>Ser. broj:</td>
+            <td class="data">12345678</td>
+          </tr>    
+          <tr>
+            <td>A. stopa:</td>
+            <td class="data">25%</td>
+          </tr>                             
+        </table>
+        <button id="desno">&#10095;</button><!--gumb desno-->
       </div>
-      <table class="table-bordered">  <!--TABLICA-->
+      <div id="editGumbi">
+          <button>Unos</button><br>
+          <button>Promjena označenog</button><br>
+          <button>Obriši označeno</button><br>
+        </div>
+    </article>
+    <footer>
+      <table class="table-bordered" id="tablica">  <!--TABLICA-->
         <tr>
           <th><input type="checkbox" id="sve"></th>
           <th>ID</th>
