@@ -60,7 +60,7 @@ th,td {
     background-color: #07334E;
     margin: 0;
     height: 40px;
-    width: 50%;
+    width: 15%;
 }
 @media screen and (max-width: 600px) {
     #editGumbi > button {
