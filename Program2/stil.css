@@ -7,10 +7,6 @@ th,td {
     padding: 1px;
 }
 
-.container {
-    margin: 15px;
-}
-
 #lijevo {
     position: relative;
     top: 80px;
@@ -18,5 +14,22 @@ th,td {
 #desno {
     position: relative;
     top: 80px;
-    left: 160px;
+    left: 27%;
+}
+
+#tablica {
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+}
+#tablica td {
+    text-align: right;
+}
+.data {
+    text-align: center;
+    border-bottom: 1.5px solid black;
+    margin-left: 10px;
+    padding: 0;
+    position: relative;
+    left: 5px;
 }
