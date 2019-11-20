@@ -2,20 +2,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 100vw;
+    background-color: #b9d87e;
 }
 
 header {
     flex: 1;
     order: 1;
-    background-color: chartreuse;
     display: flex;
     align-items: center;
 }
 footer {
     flex: 2;
     order: 2;
-    background-color: coral;
 }
 
 th,td {
@@ -53,6 +51,25 @@ th,td {
     left: 5px;
 }
 
+#editGumbi {
+    margin: 0;
+}
+#editGumbi > button {
+    border: none;
+    color: #9197ae;
+    background-color: #07334E;
+    margin: 0;
+    height: 40px;
+    width: 50%;
+}
+
 .table-bordered {
     font-size: 20px;
 }
+.table-bordered th {
+    background-color: #9197ae;
+}
+.table-bordered td {
+    background-color: #9aa3c8;
+}
+
