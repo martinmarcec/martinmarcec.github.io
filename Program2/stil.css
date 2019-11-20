@@ -62,6 +62,12 @@ th,td {
     height: 40px;
     width: 50%;
 }
+@media screen and (max-width: 600px) {
+    #editGumbi > button {
+        width: 50%;
+    }
+  }
+
 
 .table-bordered {
     font-size: 20px;
