@@ -2,17 +2,44 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #b9d87e;
+    background-color: #eee;
 }
 
-header {
+article {
     flex: 1;
+    order: 1;
+    display: flex;
+    align-items: flex-end;
+}
+#prvo {
     order: 1;
     display: flex;
     align-items: center;
 }
+#editGumbi {
+    order: 2;
+    flex: 1;
+    margin: 0;
+}
+#editGumbi > button {
+    border: none;
+    color: #9197ae;
+    background-color: #07334E;
+    margin: 0;
+    height: 40px;
+    width: 15%;
+}
+#editGumbi > button:hover {
+    border: 1px solid #9aa3c9;
+}
+@media screen and (max-width: 600px) {
+    #editGumbi > button {
+        width: 50vw;
+    }
+  }
+
 footer {
-    flex: 2;
+    flex: 99;
     order: 2;
 }
 
@@ -26,56 +53,36 @@ th,td {
     width: 50px;
     height: 50px;
     font-size: 30px;
+    background-color: transparent;
+    border: none;
+}
+#jedan {
+    order: 2;
+    font-size: 20px;
+    background-color: white;
 }
 #desno {
     order: 3;
     width: 50px;
     height: 50px;
     font-size: 30px;
-    margin-left: 10px;
+    background-color: transparent;
+    border: none;
 }
+#lijevo:hover, #desno:hover {
+    background-color: #9aa3c8;
+    border-radius: 5px;
+}
+
+
 
 #tablica {
-    order: 2;
     font-size: 20px;
 }
-#tablica td {
-    text-align: center;
-}
-.data {
-    text-align: center;
-    border-bottom: 1.5px solid black;
-    margin-left: 10px;
-    padding: 0;
-    position: relative;
-    left: 5px;
-}
-
-#editGumbi {
-    margin: 0;
-}
-#editGumbi > button {
-    border: none;
-    color: #9197ae;
-    background-color: #07334E;
-    margin: 0;
-    height: 40px;
-    width: 15%;
-}
-@media screen and (max-width: 600px) {
-    #editGumbi > button {
-        width: 50%;
-    }
-  }
-
-
-.table-bordered {
-    font-size: 20px;
-}
-.table-bordered th {
+#tablica th {
     background-color: #9197ae;
 }
-.table-bordered td {
+#tablica td {
     background-color: #9aa3c8;
 }
 
