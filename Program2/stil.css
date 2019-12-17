@@ -34,6 +34,8 @@ header {
     display: flex;
     flex-direction: row;
     height: 100%;
+    position: sticky;
+    top: 0;
 }
 #editGumbi > button {
     flex: 1;
