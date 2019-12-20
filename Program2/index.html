@@ -12,6 +12,9 @@
 </head>
 <body>
     <header>
+        <img src="svi-logo.PNG" alt="" id="naslovna">
+    </header>
+    <div id="scroll">
       <div id="prvo">
         <button id="lijevo">&#10094;</button><!--gumb lijevo-->
         <table id="jedan">
@@ -43,112 +46,106 @@
         <button id="desno">&#10095;</button><!--gumb desno-->
       </div>
       <div id="editGumbi">
-          <button><i class="fas fa-plus"></i></button><br>
-          <button><i class="fas fa-edit"></i></button><br>
-          <button><i class="fas fa-trash-alt"></i></button><br>
-        </div>
-    </header>
-    <article>
-      <div id="textbox">
-        <input type="text" class="sort" placeholder="&#xF002; Naziv">
-        <input type="text" class="sort" placeholder="&#xF002; Mjesto">
+        <button class="editGumbi" id="myBtn"><i class="fas fa-plus"></i></button>
+        <button class="editGumbi"><i class="fas fa-edit"></i></button>
+        <button class="editGumbi" style="border-right: 1px solid black;"><i class="fas fa-trash-alt"></i></button>
       </div>
-      <table id="tablica">  <!--TABLICA-->
-        <tr>
-          <th><input type="checkbox" id="sve"></th>
-          <th>ID</th>
-          <th>Inv. broj</th>
-          <th>Naziv</th>
-          <th>Mjesto</th>
-          <th>Ser. broj</th>
-          <th>Am. stopa</th>
-          <th>Obrisano</th>
-        </tr>
-        <tr>
-          <td style="background-color: dodgerblue;"><input type="checkbox" checked></td>
-          <td style="background-color: dodgerblue;">1<br><br></td>
-          <td style="background-color: dodgerblue;">0000</td>
-          <td style="background-color: dodgerblue;">stolac</td>
-          <td style="background-color: dodgerblue;">UC31</td>
-          <td style="background-color: dodgerblue;">1111</td>
-          <td style="background-color: dodgerblue;">25</td>
-          <td style="background-color: dodgerblue;">0</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>2</td>
-          <td>0001</td>
-          <td>računalo</td>
-          <td>UC31</td>
-          <td>2222</td>
-          <td>20</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>3</td>
-          <td>0002</td>
-          <td>stol</td>
-          <td>UC40</td>
-          <td>3333</td>
-          <td>50</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>4<br><br></td>
-          <td>0003</td>
-          <td>ploča</td>
-          <td>UC40</td>
-          <td>4444</td>
-          <td>50</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>5</td>
-          <td>0004</td>
-          <td>računalo</td>
-          <td>UC32</td>
-          <td>5555</td>
-          <td>25</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>6<br><br></td>
-          <td>0005</td>
-          <td>stolac</td>
-          <td>UC31</td>
-          <td>6666</td>
-          <td>25</td>
-          <td>1</td>
-          </tr>   
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>7<br><br></td>
-          <td>0006</td>
-          <td>ploča</td>
-          <td>UC32</td>
-          <td>7777</td>
-          <td>20</td>
-          <td>0</td>
-        </tr>  
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>8<br><br></td>
-          <td>0007</td>
-          <td>računalo</td>
-          <td>UC34</td>
-          <td>8888</td>
-          <td>50</td>
-          <td>0</td>
-        </tr>
-      </table>
-    </article>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <br><br>
+        <form action="B.php" method="get">		
+          <label for="naziv">Naziv:</label>
+          <input type="text" id="naziv">
+          <label for="mjesto">Mjesto:</label>
+          <select id="mjesto">
+              <option value="UC31">UC31</option>
+              <option value="UC32">UC32</option>
+              <option value="UC34">UC34</option>
+              <option value="UC40">UC40</option>
+          </select>
+          <label for="ser">Serijski broj:</label>
+          <input type="text" id="ser">
+          <label for="am">Amortizacijska stopa:</label>
+          <input type="text" id="am">                 
+          <input type="submit" name="Submit" value="UNESI" id="submit"> 			
+        </form>
+      </div> 
+    </div>
+    <div id="textbox">
+      <input type="text" class="sort" placeholder="&#xF002; Naziv">
+      <input type="text" class="sort" placeholder="&#xF002; Mjesto">
+    </div>
+    <table id="tablica">  <!--TABLICA-->
+      <tr>
+        <th><input type="checkbox" id="sve"></th>
+        <th>ID</th>
+        <th>Inv. broj</th>
+        <th>Naziv</th>
+        <th>Mjesto</th>
+      </tr>
+      <tr>
+        <td style="background-color: dodgerblue;"><input type="checkbox" checked></td>
+        <td style="background-color: dodgerblue;">1<br><br></td>
+        <td style="background-color: dodgerblue;">0000</td>
+        <td style="background-color: dodgerblue;">stolac</td>
+        <td style="background-color: dodgerblue;">UC31</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>2</td>
+        <td>0001</td>
+        <td>računalo</td>
+        <td>UC31</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>3</td>
+        <td>0002</td>
+        <td>stol</td>
+        <td>UC40</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>4<br><br></td>
+        <td>0003</td>
+        <td>ploča</td>
+        <td>UC40</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>5</td>
+        <td>0004</td>
+        <td>računalo</td>
+        <td>UC32</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>6<br><br></td>
+        <td>0005</td>
+        <td>stolac</td>
+        <td>UC31</td>
+      </tr>   
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>7<br><br></td>
+        <td>0006</td>
+        <td>ploča</td>
+        <td>UC32</td>
+      </tr>  
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>8<br><br></td>
+        <td>0007</td>
+        <td>računalo</td>
+        <td>UC34</td>
+      </tr>
+    </table>
     <footer>
       <img src="svi-logo.PNG" alt="" width="48px">
-      <p>© Martin Marčec | 2019/2020 | martin.marcec1@skole.hr</p>
+      <p id="content">© Martin Marčec | 2019/2020 | martin.marcec1@skole.hr</p>
     </footer>
+    <script src="skripta.js"></script>
 </body>
 </html>
