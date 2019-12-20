@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
@@ -14,7 +15,6 @@ header {
     height: 10vh;
     background-color: #9197ae;
     padding: 5px;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,6 @@ header {
 }
 
 #textbox {
-    margin-top: 10px;
     display: flex;
     align-content: stretch;
 }
@@ -166,7 +165,7 @@ footer {
 
 /*----------------------------------------------------------------------------------------------------*/
 
-.modal {
+#myNew {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -179,49 +178,101 @@ footer {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
-  /* Modal Content */
-  .modal-content {
+.new-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+#myEdit {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
-  /* The Close Button */
-  .close {
+.edit-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+#myDelete {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+.delete-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+.close {
     color: #aaaaaa;
-    float: right;
+    font-size: 50px;
     font-weight: bold;
     position: relative;
     top: -10px;
-    font-size: 50px;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
 
 /*----------------------------------------------------------------------------------------------------*/
 
-label, #naziv, #mjesto, #ser, #am, #submit{
+#span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+label, #naziv, #mjesto, #ser, #am, #submit, #submitRed{
     width: 100%;
     font-size: 30px;
 }
 #naziv, #mjesto, #ser, #am {
     margin-bottom: 10px;
 }
-
 #submit {
     color: #9197ae;
     border: none;
     padding: 5px;
     background-image: linear-gradient(#07334E, rgb(14, 79, 119));
+    border-radius: 5px
 }
 #submit:active {
     background-image: linear-gradient(rgb(14, 79, 119),#07334E);
+}
+#submitRed {
+    color: #eee;
+    border: none;
+    padding: 5px;
+    background: linear-gradient(red,#c80000);
+    border-radius: 5px;
+}
+#submitRed:active {
+    background: linear-gradient(#c80000,red);
 }
