@@ -1,15 +1,32 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
+var new1 = document.getElementById("myNew");
+var newBTN = document.getElementById("newBTN");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
+var edit = document.getElementById("myEdit");
+var editBTN = document.getElementById("editBTN");
+var span2 = document.getElementsByClassName("close")[1];
+
+var delete1 = document.getElementById("myDelete");
+var deleteBTN = document.getElementById("deleteBTN");
+var span3 = document.getElementsByClassName("close")[2];
+
+newBTN.onclick = function() {
+    new1.style.display = "block";
 }
+editBTN.onclick = function() {
+    edit.style.display = "block";
+}
+deleteBTN.onclick = function() {
+    delete1.style.display = "block";
+}
+
 span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+    new1.style.display = "none";
   }
+span2.onclick = function() {
+    edit.style.display = "none";
 }
+span3.onclick = function() {
+    delete1.style.display = "none";
+}
+
