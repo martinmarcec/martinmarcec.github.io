@@ -46,15 +46,18 @@
         <button id="desno">&#10095;</button><!--gumb desno-->
       </div>
       <div id="editGumbi">
-        <button class="editGumbi" id="myBtn"><i class="fas fa-plus"></i></button>
-        <button class="editGumbi"><i class="fas fa-edit"></i></button>
-        <button class="editGumbi" style="border-right: 1px solid black;"><i class="fas fa-trash-alt"></i></button>
+        <button class="editGumbi" id="newBTN"><i class="fas fa-plus"></i></button>
+        <button class="editGumbi" id="editBTN"><i class="fas fa-edit"></i></button>
+        <button class="editGumbi" id="deleteBTN" style="border-right: 1px solid black;"><i class="fas fa-trash-alt"></i></button>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <br><br>
+    <div id="myNew">
+      <div class="new-content">
+        <div id="span">
+          <span></span>
+          <span style="display: flex; justify-content: center; font-size: 30px;">Unos novog predmeta</span>
+          <span class="close">&times;</span>
+        </div>
         <form action="B.php" method="get">		
           <label for="naziv">Naziv:</label>
           <input type="text" id="naziv">
@@ -69,9 +72,45 @@
           <input type="text" id="ser">
           <label for="am">Amortizacijska stopa:</label>
           <input type="text" id="am">                 
-          <input type="submit" name="Submit" value="UNESI" id="submit"> 			
+          <input type="submit" name="Submit" value="Unesi" id="submit"> 			
         </form>
       </div> 
+    </div><!------------------------------------>
+    <div id="myEdit">
+      <div class="edit-content">
+        <div id="span">
+          <span></span>
+          <span style="display: flex; justify-content: center; font-size: 30px;">Promjena predmeta</span>
+          <span class="close">&times;</span>
+        </div>
+        <form action="B.php" method="get">		
+          <label for="naziv">Naziv:</label>
+          <input type="text" id="naziv">
+          <label for="mjesto">Mjesto:</label>
+          <select id="mjesto">
+              <option value="UC31">UC31</option>
+              <option value="UC32">UC32</option>
+              <option value="UC34">UC34</option>
+              <option value="UC40">UC40</option>
+          </select>
+          <label for="ser">Serijski broj:</label>
+          <input type="text" id="ser">
+          <label for="am">Amortizacijska stopa:</label>
+          <input type="text" id="am">                 
+          <input type="submit" name="Submit" value="Promjeni" id="submit"> 			
+        </form>
+      </div> 
+    </div>
+    <!-------------------------------->
+    <div id="myDelete">
+      <div class="delete-content">
+        <div id="span">
+          <span></span>
+          <span style="display: flex; justify-content: center; font-size: 30px;">Jeste li sigurni?</span>
+          <span class="close">&times;</span>
+        </div>
+        <input type="submit" name="Submit" value="Obriši" id="submitRed"> 
+      </div>
     </div>
     <div id="textbox">
       <input type="text" class="sort" placeholder="&#xF002; Naziv">
