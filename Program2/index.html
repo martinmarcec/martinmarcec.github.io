@@ -1,225 +1,151 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    background: #eee;
-}
-
-#naslovna {
-    margin: 0;
-    height: 50px;
-}
-
-header {
-    order: 1;
-    height: 10vh;
-    background-color: #9197ae;
-    padding: 5px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-/*----------------------------------------------------------------------------------------------------*/
-
-
-#prvo {
-    width: 100%;
-    display: flex;        /*za  'lijevo' , 'jedan' i 'desno'*/
-    align-items: center;
-}
-
-#lijevo {
-    /*flex: 1;*/
-    order: 1;
-    width: 10%;
-    height: 50px;
-    font-size: 30px;
-    background-color: transparent;
-    border: none;
-}
-#jedan {
-    /*flex: 20;*/
-    order: 2;
-    font-size: 20px;
-    width: 80%;
-    background-color: white;
-    border-collapse: collapse;
-}
-#jedan td, #jedan th {
-    border: 1px solid black;
-}
-#desno {
-    /*flex: 1;*/
-    order: 3;
-    width: 10%;
-    height: 50px;
-    font-size: 30px;
-    background-color: transparent;
-    border: none;
-}
-#lijevo:hover, #desno:hover {
-    background-color: #9aa3c8;
-    border-radius: 5px;
-}
-
-/*----------------------------------------------------------------------------------------------------*/
-
-#scroll {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #eee;
-}
-
-
-#editGumbi {
-    display: flex;
-    align-content: stretch;
-}
-
-.editGumbi {
-    width: 33.3%;
-    height: 100px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    border-right: none;
-    color: #9197ae;
-    background-image: linear-gradient(#07334E, rgb(14, 79, 119));
-    font-size: 50px;
-    text-align: center;
-}
-.editGumbi:hover {
-    border: 1px solid #9aa3c9;
-}
-.editGumbi:active {
-    background-image: linear-gradient(rgb(14, 79, 119),#07334E);
-}
-
-#textbox {
-    margin-top: 10px;
-    display: flex;
-    align-content: stretch;
-}
-.sort {
-    font-family:Arial, FontAwesome;
-    position: relative;
-    width: 50%;
-    font-size: 30px;
-}
-
-/*----------------------------------------------------------------------------------------------------*/
-
-th,td {
-    text-align: center;
-    padding: 10px;
-}
-
-#tablica {
-    margin: 0;
-    border: 1px solid black;
-    /*table-layout: fixed;*/
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 20px;
-}
-#tablica td, th {
-    border: 1px solid black;
-}
-#tablica th {
-    background-color: #9197ae;
-}
-#tablica td {
-    background-color: #9aa3c8;
-}
-
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(2); /* IE */
-  -moz-transform: scale(2); /* FF */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-  -o-transform: scale(2); /* Opera */
-  transform: scale(2);
-  padding: 10px;
-}
-
-/*----------------------------------------------------------------------------------------------------*/
-
-footer {
-    width: 100%;
-    height: 12vh;
-    background-color: #ccc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    padding-top: 15px;
-}
-
-
-/*----------------------------------------------------------------------------------------------------*/
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-/*----------------------------------------------------------------------------------------------------*/
-
-label, #naziv, #mjesto, #ser, #am, #submit{
-    width: 100%;
-    font-size: 30px;
-}
-#naziv, #mjesto, #ser, #am {
-    margin-bottom: 10px;
-}
-
-#submit {
-    color: #9197ae;
-    border: none;
-    padding: 5px;
-    background-image: linear-gradient(#07334E, rgb(14, 79, 119));
-}
-#submit:active {
-    background-image: linear-gradient(rgb(14, 79, 119),#07334E);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/84ef13e7ad.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/gif" href="svi-logo.PNG" sizes="32x16">
+    <link rel="stylesheet" href="stil.css">
+    <title>Sustav za vođenje inventure</title>
+</head>
+<body>
+    <header>
+        <img src="svi-logo.PNG" alt="" id="naslovna">
+    </header>
+    <div id="scroll">
+      <div id="prvo">
+        <button id="lijevo">&#10094;</button><!--gumb lijevo-->
+        <table id="jedan">
+          <tr>
+            <td>ID:</td>
+            <td class="data">1</td>
+          </tr>
+          <tr>
+            <td>Inventarni broj:</td>
+            <td class="data">0000</td>
+          </tr> 
+          <tr>
+            <td>Naziv:</td>
+            <td class="data">stolac</td>
+          </tr>
+          <tr>
+            <td>Mjesto:</td>
+            <td class="data">UC31</td>
+          </tr>
+          <tr>
+            <td>Serijski broj:</td>
+            <td class="data">1111</td>
+          </tr>    
+          <tr>
+            <td>Amortizacijska stopa:</td>
+            <td class="data">25</td>
+          </tr>                             
+        </table>
+        <button id="desno">&#10095;</button><!--gumb desno-->
+      </div>
+      <div id="editGumbi">
+        <button class="editGumbi" id="myBtn"><i class="fas fa-plus"></i></button>
+        <button class="editGumbi"><i class="fas fa-edit"></i></button>
+        <button class="editGumbi" style="border-right: 1px solid black;"><i class="fas fa-trash-alt"></i></button>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <br><br>
+        <form action="B.php" method="get">		
+          <label for="naziv">Naziv:</label>
+          <input type="text" id="naziv">
+          <label for="mjesto">Mjesto:</label>
+          <select id="mjesto">
+              <option value="UC31">UC31</option>
+              <option value="UC32">UC32</option>
+              <option value="UC34">UC34</option>
+              <option value="UC40">UC40</option>
+          </select>
+          <label for="ser">Serijski broj:</label>
+          <input type="text" id="ser">
+          <label for="am">Amortizacijska stopa:</label>
+          <input type="text" id="am">                 
+          <input type="submit" name="Submit" value="UNESI" id="submit"> 			
+        </form>
+      </div> 
+    </div>
+    <div id="textbox">
+      <input type="text" class="sort" placeholder="&#xF002; Naziv">
+      <input type="text" class="sort" placeholder="&#xF002; Mjesto">
+    </div>
+    <table id="tablica">  <!--TABLICA-->
+      <tr>
+        <th><input type="checkbox" id="sve"></th>
+        <th>ID</th>
+        <th>Inv. broj</th>
+        <th>Naziv</th>
+        <th>Mjesto</th>
+      </tr>
+      <tr>
+        <td style="background-color: dodgerblue;"><input type="checkbox" checked></td>
+        <td style="background-color: dodgerblue;">1<br><br></td>
+        <td style="background-color: dodgerblue;">0000</td>
+        <td style="background-color: dodgerblue;">stolac</td>
+        <td style="background-color: dodgerblue;">UC31</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>2</td>
+        <td>0001</td>
+        <td>računalo</td>
+        <td>UC31</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>3</td>
+        <td>0002</td>
+        <td>stol</td>
+        <td>UC40</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>4<br><br></td>
+        <td>0003</td>
+        <td>ploča</td>
+        <td>UC40</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>5</td>
+        <td>0004</td>
+        <td>računalo</td>
+        <td>UC32</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>6<br><br></td>
+        <td>0005</td>
+        <td>stolac</td>
+        <td>UC31</td>
+      </tr>   
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>7<br><br></td>
+        <td>0006</td>
+        <td>ploča</td>
+        <td>UC32</td>
+      </tr>  
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>8<br><br></td>
+        <td>0007</td>
+        <td>računalo</td>
+        <td>UC34</td>
+      </tr>
+    </table>
+    <footer>
+      <img src="svi-logo.PNG" alt="" width="48px">
+      <p id="content">© Martin Marčec | 2019/2020 | martin.marcec1@skole.hr</p>
+    </footer>
+    <script src="skripta.js"></script>
+</body>
+</html>
