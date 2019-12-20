@@ -193,8 +193,10 @@ footer {
   .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
     font-weight: bold;
+    position: relative;
+    top: -10px;
+    font-size: 50px;
   }
   
   .close:hover,
