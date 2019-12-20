@@ -1,104 +1,51 @@
-html,body {
-    height:100%;
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    display: flex;                  /*za 'article' i 'footer'*/
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: #eee;
-    overflow-x: hidden;
+    margin: 0 auto;
+    background: #eee;
+}
+
+#naslovna {
     margin: 0;
+    height: 50px;
 }
 
 header {
-    /*flex: 1;*/
     order: 1;
-    display: flex;          /*za 'prvo' i 'editgumbi'*/
-    align-items: flex-end;  
-    position: sticky;
-    top: 0;
-    z-index: 1; 
-    background-color: #eee;
-    border-bottom: 1px solid black;
+    height: 10vh;
+    background-color: #9197ae;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
 #prvo {
-    order: 1;
-    width: 50vw;
-    float: left;
+    width: 100%;
     display: flex;        /*za  'lijevo' , 'jedan' i 'desno'*/
     align-items: center;
 }
-#editGumbi {
-    order: 2;
-    width: 50vw;
-    /*float: left;*/
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-#editGumbi > button {
-    flex: 1;
-    align-items: stretch;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: none;
-    border-bottom: none;
-    color: #9197ae;
-    background-image: linear-gradient(#07334E, rgb(14, 79, 119));
-    /*background-color: #07334E;*/
-    /*margin: 0;*/  
-    font-size: 50px;
-    text-align: center;
-}
-#editGumbi > button:hover {
-    border: 1px solid #9aa3c9;
-
-}
-#editGumbi > button:active {
-    background-image: linear-gradient(rgb(14, 79, 119),#07334E);
-}
-
-article {
-    /*flex: 99;*/
-    order: 2;
-    width: 100%;
-}
-
-footer {
-    /*flex: 1;*/
-    order: 3;
-    width: 100vw;
-    background-color: #ccc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
-
-th,td {
-    text-align: center;
-    padding: 1px;
-}
 
 #lijevo {
-    flex: 1;
+    /*flex: 1;*/
     order: 1;
-    width: 50px;
+    width: 10%;
     height: 50px;
     font-size: 30px;
     background-color: transparent;
     border: none;
 }
 #jedan {
-    flex: 20;
+    /*flex: 20;*/
     order: 2;
     font-size: 20px;
-    width: 100%;
+    width: 80%;
     background-color: white;
     border-collapse: collapse;
 }
@@ -106,9 +53,9 @@ th,td {
     border: 1px solid black;
 }
 #desno {
-    flex: 1;
+    /*flex: 1;*/
     order: 3;
-    width: 50px;
+    width: 10%;
     height: 50px;
     font-size: 30px;
     background-color: transparent;
@@ -119,24 +66,75 @@ th,td {
     border-radius: 5px;
 }
 
+/*----------------------------------------------------------------------------------------------------*/
+
+#scroll {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #eee;
+}
+
+
+#editGumbi {
+    display: flex;
+    align-content: stretch;
+}
+
+.editGumbi {
+    width: 33.3%;
+    height: 100px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: none;
+    color: #9197ae;
+    background-image: linear-gradient(#07334E, rgb(14, 79, 119));
+    font-size: 50px;
+    text-align: center;
+}
+.editGumbi:hover {
+    border: 1px solid #9aa3c9;
+}
+.editGumbi:active {
+    background-image: linear-gradient(rgb(14, 79, 119),#07334E);
+}
+
+#textbox {
+    margin-top: 10px;
+    display: flex;
+    align-content: stretch;
+}
+.sort {
+    font-family:Arial, FontAwesome;
+    position: relative;
+    width: 50%;
+    font-size: 30px;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+th,td {
+    text-align: center;
+    padding: 10px;
+}
+
 #tablica {
+    margin: 0;
+    border: 1px solid black;
+    /*table-layout: fixed;*/
     width: 100%;
-    font-size: 20px;
     border-collapse: collapse;
+    font-size: 20px;
+}
+#tablica td, th {
+    border: 1px solid black;
 }
 #tablica th {
     background-color: #9197ae;
-    border: 1px solid black;
-    padding: 5px;
-    text-align: center;
-    /*width: 12,5%;*/
 }
 #tablica td {
     background-color: #9aa3c8;
-    border: 1px solid black;
-    padding: 5px;
-    text-align: center;
-    /*width: 12,5%;*/
 }
 
 input[type=checkbox]
@@ -150,13 +148,78 @@ input[type=checkbox]
   padding: 10px;
 }
 
-.sort {
-    font-family:Arial, FontAwesome;
-    position: relative;
-    margin: 5px;
-    width: 47%;
-    font-size: 20px;
-    
+/*----------------------------------------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 12vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 15px;
 }
 
 
+/*----------------------------------------------------------------------------------------------------*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*----------------------------------------------------------------------------------------------------*/
+
+label, #naziv, #mjesto, #ser, #am, #submit{
+    width: 100%;
+    font-size: 30px;
+}
+#naziv, #mjesto, #ser, #am {
+    margin-bottom: 10px;
+}
+
+#submit {
+    color: #9197ae;
+    border: none;
+    padding: 5px;
+    background-image: linear-gradient(#07334E, rgb(14, 79, 119));
+}
+#submit:active {
+    background-image: linear-gradient(rgb(14, 79, 119),#07334E);
+}
