@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/84ef13e7ad.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/gif" href="img/icon.png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <title>DevTournament</title>
+</head>
+<body>
+    <div id="main2">
+        <nav style="background-color: #00aeef;"></nav>
+        <header>
+            <a href="index.html"><h1>DevTournament</h1></a>
+            <a href="index.html">Home</a>
+            <a href="new.html">New</a>
+            <a href="tournaments.html">Tournaments</a>
+        </header>
+        <aside style="background-color: #00aeef;"></aside>
+    </div>
+    <div id="main">
+        <nav></nav>
+        <article>
+            <h2>New</h2>
+            <form action="/action_page.php">
+                <label for="img">Image</label>
+                <input type="file" id="img">
+
+                <label for="ime">Name</label>
+                <input type="text" id="ime"><br><br>
+
+                <label for="mjesto">Place</label>
+                <input type="text" id="mjesto"><br><br>
+
+                <label for="start">Start</label>
+                <input type="date" id="start">
+                <label for="finish">Finish</label>
+                <input type="date" id="finish"><br><br>
+
+                <label for="sport">Sport</label>
+                <input type="text" id="sport"><br><br>
+
+                <label for="money">Prize money</label>
+                <input type="text" id="money"><br><br>
+
+                <label for="tip">Type</label>
+                <select id="tip">
+                    <option value="Round Robin">Round Robin</option>
+                    <option value="Elimination">Elimination</option>
+                </select>
+                <input type="checkbox" name="third">Include a match for 3rd place between semifinal losers<br><br>
+
+                <label for="number">Number of participants</label>
+                <input type="text" id="number"><br><br>
+
+                <label for="timovi">Participants / Teams</label><br>
+                -one per line<br>
+                -ordered by seed, best to worst<br>
+                <textarea rows="10" cols="50" id="timovi" style="font-size: 20px;"></textarea>
+              
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+        <aside></aside>
+    </div>
+    <div id="main2">
+        <nav></nav>
+        <footer>
+            <hr>
+            <div>
+                <p style="width: 70%;">© Copyright 2020 All Rights Reserved. No part of this site may be reproduced, stored in a retrieval system or transmitted in any way or by any means (including photocopying, recording or storing it in any medium by electronic means)</p>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+            <hr>
+        </footer>  
+        <aside></aside>
+    </div>
+
+</body>
+</html>

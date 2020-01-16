@@ -1,0 +1,262 @@
+@font-face {
+    font-family: roboto;
+    src: url(Fonts/roboto-bold.ttf);
+  }
+
+* {
+    box-sizing: border-box; 
+  }
+body {
+    font-family: roboto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background-color: #f1f1f1;
+    color: #1f2223;
+}
+#main {
+    display: flex;
+    flex: 1;
+}
+#main2 {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+#main > article, #main2 > article {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    flex: 10;
+    order: 2;
+    padding: 0;
+}
+
+#main > nav, #main2 > nav {
+    flex: 1;
+    order: 1;
+    background-color: transparent;
+}
+#main > aside, #main2 > aside {
+    float: 1;
+    flex: 1;
+    order: 3;
+    background-color: transparent;
+}
+header {
+    height: 8vh;
+    background-color: #00aeef;
+    flex: 10;
+    order: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+header > * {
+    margin-right: 2vw;
+}
+header > *:hover {  
+    color: #ccc;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: #ccc
+}
+a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    height: 8vh;
+    flex: 6;
+    order: 2;
+
+}
+footer p {
+    font-size: 12px;
+}
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    font-size: 40px;
+    margin: 5px;
+}
+i:hover {
+    color: #00aeef;
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+}
+
+
+.turnir {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.turnir:hover {
+    background-color: #ccc;
+}
+
+.slika {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+}
+.slika > img {
+    height: 69px;
+}
+.podaci {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+}
+.podaci > p {
+    margin: 2px;
+}
+
+.ikone {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.a > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ikone img {
+    width: 5vw;
+
+}
+.ikone p {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+label {
+    font-size: 20px;
+}
+input, select {
+    width: 100%;
+    font-size: 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    font-size: 20px;
+    background-color: #00aeef;
+    color: white;
+    padding: 7px;
+    font-size: 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: dodgerblue;
+}
+  
+input[type=checkbox] {
+    width: initial;
+    margin-right: 5px;
+}
+
+#pocetni {
+    background-color: #00aeef;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#pocetni > div {
+    margin-left: 10%;
+}
+
+#pocetak{
+    background-color: #f1f1f1;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 5px;
+}
+#pocetak:visited{
+    text-decoration: none;
+    color: inherit;
+}
+#pocetak:hover{
+    background-color: #ccc;
+    text-decoration: none;
+    color: inherit;
+}
+#pocetak:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+#kakoRadi{
+    text-align: center;
+}
+
+#screens {
+    padding: 5%;
+    background-color: #00aeef;
+    display: flex;
+    justify-content: space-around;
+}
+#screens > img {
+    width: 45%;
+}
+
+#metode {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+}
+#cont {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+#cont > div {
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
