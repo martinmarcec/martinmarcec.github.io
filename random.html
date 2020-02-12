@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random food</title>
+</head>
+<body>
+    <div id="food"></div>
+    <div id="drink"></div>
+    <button onclick="generiraj()">Generiraj</button>
+</body>
+<script>
+
+    function generiraj(){
+        var hrana = ["Klipić","Pivski","Kroasan","Pizza","Calzone","Čajna","Slavonski","Burek sir","Burek meso"];
+        var rand = Math.floor(Math.random() * 9);
+        var kolicina = Math.floor(Math.random() * 2 + 1);
+
+        var piti = ["Voda","Cola","Cocktail","Fanta","Isosport","Ledeni Breskva","Ledeni Limun","Jana Vitamin","Aparat"];
+        var rand2 = Math.floor(Math.random() * 9);
+
+        document.getElementById('food').innerHTML = kolicina + " ";
+        for(var i=0;i<hrana.length;i++){
+            if(hrana.indexOf(hrana[i])==rand){
+                document.getElementById('food').innerHTML += hrana[i];
+            }
+        }
+        
+        for(var i=0;i<piti.length;i++){
+            if(piti.indexOf(piti[i])==rand2){
+                document.getElementById('drink').innerHTML = piti[i];
+            }
+        }
+    }
+
+
+</script>
+</html>
